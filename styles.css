@@ -137,12 +137,12 @@ body {
 .contact-button:focus-visible,
 .header-line:hover,
 .header-line:focus-visible,
-.floating-line:hover,
-.floating-line:focus-visible { transform: translateY(-3px); }
+.floating-chat:hover,
+.floating-chat:focus-visible { transform: translateY(-3px); }
 
 .contact-button:focus-visible,
 .header-line:focus-visible,
-.floating-line:focus-visible { outline: 4px solid #ff8a62; outline-offset: 3px; }
+.floating-chat:focus-visible { outline: 4px solid #ff8a62; outline-offset: 3px; }
 
 .contact-button.line { color: #fff; background: linear-gradient(135deg, #27d46c, #08b857); }
 .contact-button.kakao { color: #2b2100; background: linear-gradient(135deg, #ffe54b, #ffd21d); }
@@ -158,28 +158,34 @@ body {
 
 .contact-band.final { height: 485px; padding-bottom: 110px; }
 
-.floating-line {
+.floating-contact {
   position: fixed;
   right: 24px;
   bottom: 24px;
   z-index: 50;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.floating-chat {
+  display: flex;
   align-items: center;
   width: 62px;
   height: 62px;
   overflow: hidden;
-  color: #fff;
   text-decoration: none;
   border-radius: 999px;
-  background: #19c864;
-  box-shadow: 0 14px 32px rgba(8, 120, 58, .25);
   transition: width .22s ease, transform .18s ease;
 }
 
-.floating-line:hover,
-.floating-line:focus-visible { width: 150px; }
-.floating-line span { display: grid; place-items: center; flex: 0 0 62px; font-size: 10px; font-weight: 950; }
-.floating-line strong { width: 76px; white-space: nowrap; font-size: 14px; }
+.floating-line { color: #fff; background: #19c864; box-shadow: 0 14px 32px rgba(8, 120, 58, .25); }
+.floating-kakao { color: #2b2100; background: #fee500; box-shadow: 0 14px 32px rgba(118, 91, 0, .24); }
+.floating-chat:hover,
+.floating-chat:focus-visible { width: 150px; }
+.floating-chat span { display: grid; place-items: center; flex: 0 0 62px; font-size: 10px; font-weight: 950; }
+.floating-chat strong { width: 76px; white-space: nowrap; font-size: 14px; }
 
 .visually-hidden {
   position: absolute !important;
@@ -209,10 +215,11 @@ body {
   .contact-button { width: 100%; height: 92px; justify-content: flex-start; }
   .chat-icon { width: 56px; height: 56px; }
   .contact-button strong { font-size: 22px; }
-  .floating-line { right: 12px; bottom: 12px; width: 54px; height: 54px; }
-  .floating-line:hover,
-  .floating-line:focus-visible { width: 136px; }
-  .floating-line span { flex-basis: 54px; }
+  .floating-contact { right: 12px; bottom: 12px; gap: 8px; }
+  .floating-chat { width: 54px; height: 54px; }
+  .floating-chat:hover,
+  .floating-chat:focus-visible { width: 136px; }
+  .floating-chat span { flex-basis: 54px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
