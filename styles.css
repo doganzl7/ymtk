@@ -36,7 +36,7 @@ body {
 .header-logo { display: inline-flex; align-items: center; text-decoration: none; }
 .header-logo img { display: block; width: 190px; height: 47px; object-fit: contain; }
 
-.header-line {
+.header-kakao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,21 +44,21 @@ body {
   width: 300px;
   height: 50px;
   padding: 0 20px;
-  color: #fff;
+  color: #2b2100;
   text-decoration: none;
   border-radius: 999px;
-  background: linear-gradient(135deg, #20d269, #08b857);
-  box-shadow: 0 8px 20px rgba(8, 184, 87, .2);
+  background: #fee500;
+  box-shadow: 0 8px 20px rgba(118, 91, 0, .2);
 }
 
-.header-line strong { font-size: 17px; letter-spacing: -.04em; }
+.header-kakao strong { font-size: 17px; letter-spacing: -.04em; }
 
 .mini-chat,
 .chat-icon {
   display: grid;
   place-items: center;
   flex: 0 0 auto;
-  color: #08a94f;
+  color: #302300;
   font-weight: 950;
   background: #fff;
 }
@@ -135,13 +135,13 @@ body {
 
 .contact-button:hover,
 .contact-button:focus-visible,
-.header-line:hover,
-.header-line:focus-visible,
+.header-kakao:hover,
+.header-kakao:focus-visible,
 .floating-chat:hover,
 .floating-chat:focus-visible { transform: translateY(-3px); }
 
 .contact-button:focus-visible,
-.header-line:focus-visible,
+.header-kakao:focus-visible,
 .floating-chat:focus-visible { outline: 4px solid #ff8a62; outline-offset: 3px; }
 
 .contact-button.line { color: #fff; background: linear-gradient(135deg, #27d46c, #08b857); }
@@ -203,8 +203,8 @@ body {
   .site-header { position: relative; height: 70px; }
   .header-inner { height: 70px; padding: 0 14px; }
   .header-logo img { width: 142px; height: auto; }
-  .header-line { width: auto; height: 42px; padding: 0 13px; gap: 8px; }
-  .header-line strong { font-size: 13px; }
+  .header-kakao { width: auto; height: 42px; padding: 0 13px; gap: 8px; }
+  .header-kakao strong { font-size: 13px; }
   .mini-chat { width: 28px; height: 24px; font-size: 7px; }
   .landing { box-shadow: none; }
   .contact-band,
