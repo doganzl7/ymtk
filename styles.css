@@ -275,3 +275,13 @@ body {
   .section-title { padding: 24px 20px 10px; }
   .section-copy { padding: 0 20px 24px; }
 }
+.hero-heading { margin: 0; font-size: inherit; line-height: 0; }
+.section-details { line-height: 1.6; border-bottom: 1px solid #e2e8f0; }
+.section-details summary {
+  padding: 12px 20px;
+  color: #475569;
+  background: #fff;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.section-details summary:focus-visible { outline: 3px solid #1675c1; outline-offset: -3px; }
