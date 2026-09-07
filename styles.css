@@ -246,3 +246,32 @@ body {
   html { scroll-behavior: auto; }
   * { transition-duration: .01ms !important; }
 }
+
+.page-title {
+  margin: 0;
+  padding: 28px 32px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.4;
+  letter-spacing: -.04em;
+}
+.section-title {
+  margin: 0;
+  padding: 28px 32px 10px;
+  color: #17243a;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.section-copy {
+  margin: 0;
+  padding: 0 32px 32px;
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 680px) {
+  .page-title { padding: 22px 20px; }
+  .section-title { padding: 24px 20px 10px; }
+  .section-copy { padding: 0 20px 24px; }
+}
